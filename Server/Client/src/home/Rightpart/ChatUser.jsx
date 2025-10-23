@@ -20,7 +20,7 @@ function ChatUser() {
       <div className="flex space-x-3 items-center justify-center h-[8vh]  hover:bg-slate-700 cursor-pointer duration-300 ">
         <div className="avatar ">
           <div className="w-14 rounded-full">
-            <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+            <img src={selectedConversation.coverUrl} />
           </div>
         </div>
         <div>

@@ -13,19 +13,19 @@ export default function Typesend() {
   };
   return (
     <form onSubmit={handleSubmit}>
-      <div className="flex space-x-1 h-[10vh] bg-gray-800 ">
-        <div className="w-[70%] mx-4  flex justify-center items-center">
+      <div className="flex space-x-1 h-[8vh] bg-gray-800 ">
+        <div className="w-[70%] mx-4  flex justify-center items-center gap-2">
           <input
             type="text"
             placeholder="Type here"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
-            className="border border-gray-700 rounded-xl outline-none mt-2 px-4 py-4 w-full text-black font-semibold"
+            className="border border-gray-700 rounded-xl outline-none mt-2 px-4 py-4 w-full text-grey font-semibold h-10 mb-3"
           />
+          <button>
+            <IoSend className="text-3xl" />
+          </button>
         </div>
-        <button>
-          <IoSend className="text-3xl" />
-        </button>
       </div>
     </form>
   );

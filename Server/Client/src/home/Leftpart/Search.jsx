@@ -24,10 +24,10 @@ function Search() {
   return (
     <>
       <div className="h-[10vh]">
-        <div className="px-6 py-3">
+        <div className="px-6 py-2">
           <form onSubmit={handleSubmit}>
             <div className="flex space-x-3">
-              <label className="border-[1px] border-gray-700 bg-slate-900 rounded-lg p-3 flex items-center gap-2 w-[80%]">
+              <label className="border-[1px] border-gray-700 bg-slate-900 rounded-lg p-2 flex items-center gap-1 w-[80%] h-8">
                 <input
                   type="text"
                   className="grow outline-none bg-transparent"
@@ -37,7 +37,7 @@ function Search() {
                 />
               </label>
               <button>
-                <FaSearch className="text-5xl p-2 hover:bg-gray-600 rounded-full duration-300" />
+                <FaSearch className="text-4xl p-2 hover:bg-gray-600 rounded-full duration-300" />
               </button>
             </div>
           </form>

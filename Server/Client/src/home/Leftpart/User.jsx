@@ -17,7 +17,7 @@ function User({ user }) {
       <div className="flex space-x-4 px-6 py-3 hover:bg-slate-700 cursor-pointer duration-300 ">
         <div className={`avatar ${isOnline ? "online" : ""}`}>
           <div className="w-12 rounded-full">
-            <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+            <img src={user.coverUrl} />
           </div>
         </div>
         <div>

@@ -28,6 +28,7 @@ function Signup() {
       email: data.email,
       password: data.password,
       confirmPassword: data.confirmPassword,
+      coverUrl: data.coverUrl,
     };
     // console.log(userInfo);
     await axios
@@ -56,8 +57,6 @@ function Signup() {
           <h1 className="text-2xl text-center ">
             Chat<span className="text-green-500 font-semibold">App</span>
           </h1>
-          <h2 className="text-white font-bold text-xl">Signup</h2>
-          <br />
           {/* fullname */}
           <label className="input input-bordered flex items-center gap-2">
             <svg
@@ -71,7 +70,7 @@ function Signup() {
             <input
               type="text"
               className="grow"
-              placeholder="Fullname"
+              placeholder="Full Name"
               {...register("fullname", { required: true })}
             />
           </label>
@@ -103,6 +102,23 @@ function Signup() {
               This field is required
             </span>
           )}
+          {/* coverurl */}
+          <label className="input input-bordered flex items-center gap-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              className="w-4 h-4 opacity-70"
+            >
+              <path d="M21 19V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2ZM5 5h14v14H5V5ZM8 13l2.5 3 3.5-4.5L18 17H6l2-4Z" />
+            </svg>
+            <input
+              type="text"
+              className="grow"
+              placeholder="Cover Url"
+              {...register("coverUrl")}
+            />
+          </label>
           {/* password */}
           <label className="input input-bordered flex items-center gap-2">
             <svg

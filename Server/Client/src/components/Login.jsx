@@ -45,8 +45,6 @@ function Login() {
           <h1 className="text-2xl text-center ">
             Chat<span className="text-green-500 font-semibold">App</span>
           </h1>
-          <h2 className="text-white font-bold text-xl">Login</h2>
-          <br />
           {/* 
           email */}
           <label className="input input-bordered flex items-center gap-2">
@@ -105,7 +103,7 @@ function Login() {
                 to="/signup"
                 className="text-blue-500 cursor-pointer underline ml-1"
               >
-                Signup
+                SignUp
               </Link>
             </p>
 
